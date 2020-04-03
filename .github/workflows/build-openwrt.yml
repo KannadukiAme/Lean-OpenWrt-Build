@@ -67,7 +67,7 @@ jobs:
       run: git clone --depth 1 $OPEN_CLASH_REPO_URL -b master  
 
     - name: add OpenClash to OpenWrt
-      run: cp ./OpenClash/luci-app-openclash ./openwrt/package/lean/
+      run: cp -r ./OpenClash/luci-app-openclash ./openwrt/package/lean/
 
     - name: Load custom configuration
       run: |
